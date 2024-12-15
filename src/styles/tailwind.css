@@ -1,0 +1,71 @@
+/* Base styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for the Weather App */
+
+/* Global body styling */
+body {
+  @apply bg-background text-gray-800 font-sans;
+}
+
+/* Headings */
+h1, h2, h3 {
+  @apply text-primary font-bold leading-tight;
+}
+
+/* Links */
+a {
+  @apply text-accent hover:text-primary transition duration-300 ease-in-out;
+}
+
+/* Buttons */
+button {
+  @apply bg-accent text-white font-bold px-4 py-2 rounded-lg shadow hover:bg-primary transition duration-300 ease-in-out;
+}
+
+/* Input fields */
+input, textarea {
+  @apply border border-gray-300 rounded-lg p-2 shadow-sm focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent;
+}
+
+/* Navbar styling */
+nav {
+  @apply bg-primary text-white px-6 py-4 shadow-md;
+}
+
+nav a {
+  @apply px-4 hover:text-accent transition;
+}
+
+/* Footer */
+footer {
+  @apply bg-secondary text-white py-4 text-center;
+}
+
+/* Cards (Weather and Blog) */
+.card {
+  @apply bg-white border border-gray-200 rounded-lg p-4 shadow-lg;
+}
+
+.card h2, .card h3 {
+  @apply text-lg font-bold text-primary mb-2;
+}
+
+.card p {
+  @apply text-gray-700 leading-relaxed;
+}
+
+/* Utility classes */
+.container {
+  @apply max-w-7xl mx-auto px-6;
+}
+
+.section-title {
+  @apply text-3xl font-extrabold text-primary mb-6;
+}
+
+.grid-layout {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+}
